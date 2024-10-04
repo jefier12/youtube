@@ -37,6 +37,22 @@ a{
 h1{
   font-size: 1.5rem;
 }
+hr{
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  margin: 12px;
+}
+h4{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-left: 20px;
+}
+i{
+  font-size: 1.5rem;
+}
+p,a{
+  font-size: 0.9rem;
+}
 .header{
   grid-area: header;
   position: fixed;
@@ -144,7 +160,33 @@ h1{
 }
 .sidebar{
   grid-area: sidebar;
+  background-color: #212121;
 }
+
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+
+}
+
+.sidebar-item{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px ;
+  border-radius: 10px;
+  transition:  0.5s;
+}
+
+.sidebar-item i{
+  margin-right: 24px;
+}
+
+.sidebar-item:hover{
+  background-color: #f0ffff50;
+}
+
 .content{
   grid-area: content;
 }
