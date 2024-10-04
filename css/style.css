@@ -51,7 +51,18 @@ i{
   font-size: 1.5rem;
 }
 p,a{
-  font-size: 0.9rem;
+  font-size: 0.9 rem;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: #717171;
 }
 .header{
   grid-area: header;
@@ -161,6 +172,7 @@ p,a{
 .sidebar{
   grid-area: sidebar;
   background-color: #212121;
+  overflow-y: scroll;
 }
 
 .sidebar-items{
