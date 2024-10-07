@@ -77,6 +77,7 @@ p,a{
   display: flex;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 6px;
 }
 .logo-container{
   width: 50px;
@@ -333,4 +334,28 @@ p,a{
   border-radius: 4px;
   font-size: 12px;
 
+}
+
+@media (max-width:1200px){
+  body{
+    grid-template-columns: 70px 1fr;
+  }
+  .sidebar-items span, .sidebar-items h4{
+    display: none;
+  }
+  .sidebar-items{
+    padding: 0;
+  }
+  .sidebar-item{
+    padding: 0 20px;
+  }
+  .chips-warpper{
+    max-width: calc(100vw - 70px);
+  }
+}
+
+@media (max-width:800px){
+  .search-container{
+    display: none;
+  }
 }
